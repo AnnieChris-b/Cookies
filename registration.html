@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/form-validation.js" defer></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <form id="registrationForm" onsubmit="return saveAndRedirect();">
+        <label>Username*:</label>
+        <input type="text" id="username"><br>
+        <label>Password*:</label>
+        <input type="password" id="password"><br>
+        <label>Verify Password*:</label>
+        <input type="password" id="passwordVerify"><br>
+        <label>First Name*:</label>
+        <input type="text" id="firstName"><br>
+        <label>Last Name*:</label>
+        <input type="text" id="lastName"><br>
+        <label>Email:</label>
+        <input type="text" id="email"><br>
+        <label>Phone Number:</label>
+        <input type="text" id="phoneNumber"><br>
+        <label>Newsletter:</label>
+        <input type="radio" name="newsletter" value="yes">Yes
+        <input type="radio" name="newsletter" value="no">No<br><br>
+        <button type="submit">Submit</button>
+        <form id="registrationForm" onsubmit="return saveAndRedirect();">
+    </form>
+</body>
+</html>
