@@ -8,26 +8,37 @@
 </head>
 <body>
     <h1>Register</h1>
+
+    <!-- form -->
     <form id="registrationForm" onsubmit="return saveAndRedirect();">
-        <label>Username*:</label>
-        <input type="text" id="username"><br>
-        <label>Password*:</label>
-        <input type="password" id="password"><br>
-        <label>Verify Password*:</label>
-        <input type="password" id="passwordVerify"><br>
-        <label>First Name*:</label>
-        <input type="text" id="firstName"><br>
-        <label>Last Name*:</label>
-        <input type="text" id="lastName"><br>
-        <label>Email:</label>
-        <input type="text" id="email"><br>
-        <label>Phone Number:</label>
-        <input type="text" id="phoneNumber"><br>
+        <label for="username">Username*:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password*:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="passwordVerify">Verify Password*:</label>
+        <input type="password" id="passwordVerify" name="passwordVerify" required><br>
+
+        <label for="firstName">First Name*:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name*:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(xxx) xxx-xxxx"><br>
+
         <label>Newsletter:</label>
-        <input type="radio" name="newsletter" value="yes">Yes
-        <input type="radio" name="newsletter" value="no">No<br><br>
+        <input type="radio" id="newsletterYes" name="newsletter" value="yes">
+        <label for="newsletterYes">Yes</label>
+        <input type="radio" id="newsletterNo" name="newsletter" value="no">
+        <label for="newsletterNo">No</label><br><br>
+
         <button type="submit">Submit</button>
-        <form id="registrationForm" onsubmit="return saveAndRedirect();">
     </form>
 </body>
 </html>
